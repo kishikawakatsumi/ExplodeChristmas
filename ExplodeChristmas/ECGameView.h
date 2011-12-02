@@ -20,4 +20,5 @@
 
 - (void)explode:(CGPoint)point;
 - (void)fail:(CGPoint)point;
+
 @end

@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class ECGameView;
 
 @interface ECGameViewController : UIViewController {
     UILabel *scoreLabel;
     ECGameView *gameView;
+    
+    NSMutableArray *explosionSoundEffects;
+    NSMutableArray *failSoundEffects;
     
     NSMutableSet *ornaments;
     

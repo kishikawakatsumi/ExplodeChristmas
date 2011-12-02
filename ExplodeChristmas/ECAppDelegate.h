@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class ECViewController;
 
-@interface ECAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ECAppDelegate : UIResponder<UIApplicationDelegate> {
+    UIWindow *window;
+    ECViewController *viewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) ECViewController *viewController;
 
 @end

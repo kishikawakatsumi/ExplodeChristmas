@@ -19,13 +19,34 @@
 - (id)init {
     self = [super init];
     if (self) {
+        explosionSoundEffects = [[NSMutableArray alloc] init];
+        failSoundEffects = [[NSMutableArray alloc] init];
+        NSBundle *mainBundle = [NSBundle mainBundle];
+        for (int i = 0; i < 10; i++) {
+            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[mainBundle pathForResource:@"explosion" ofType:@"mp3"]] error:nil];
+            [player prepareToPlay];
+            
+            [explosionSoundEffects addObject:player];
+            [player release];
+        }
+        for (int i = 0; i < 10; i++) {
+            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[mainBundle pathForResource:@"fail" ofType:@"mp3"]] error:nil];
+            [player prepareToPlay];
+            
+            [failSoundEffects addObject:player];
+            [player release];
+        }
+        
         ornaments = [[NSMutableSet alloc] init];
+        
         waves = 20;
     }
     return self;
 }
 
 - (void)dealloc {
+    [explosionSoundEffects release];
+    [failSoundEffects release];
     [ornaments release];
     [super dealloc];
 }
@@ -123,6 +144,12 @@
         if (CGRectContainsPoint(frame, point)) {
             [ornament touchesBegan:touches withEvent:event];
             [gameView explode:point];
+            for (AVAudioPlayer *player in explosionSoundEffects) {
+                if (!player.isPlaying) {
+                    [player play];
+                    break;
+                }
+            }
             
             score++;
             scoreLabel.text = [NSString stringWithFormat:@"Score: %d", score];
@@ -132,6 +159,12 @@
     }
     
     [gameView fail:point];
+    for (AVAudioPlayer *player in failSoundEffects) {
+        if (!player.isPlaying) {
+            [player play];
+            break;
+        }
+    }
 }
 
 @end

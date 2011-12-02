@@ -7,6 +7,9 @@ MIT License
 ### Xmas Icons 2009
 http://iconka.com
 
+### Sound Effects
+http://soundbible.com/
+
 ## Information
 http://d.hatena.ne.jp/KishikawaKatsumi/20111202/1322835912
 

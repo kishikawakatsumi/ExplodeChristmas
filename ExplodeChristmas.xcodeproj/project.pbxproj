@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080885BB1488AE60000957CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080885BA1488AE60000957CC /* UIKit.framework */; };
+		080885BD1488AE60000957CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080885BC1488AE60000957CC /* Foundation.framework */; };
+		080885BF1488AE60000957CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080885BE1488AE60000957CC /* CoreGraphics.framework */; };
+		080885C51488AE60000957CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 080885C31488AE60000957CC /* InfoPlist.strings */; };
+		080885C71488AE60000957CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885C61488AE60000957CC /* main.m */; };
+		080885CB1488AE60000957CC /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885CA1488AE60000957CC /* ECAppDelegate.m */; };
+		080885CE1488AE60000957CC /* ECViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885CD1488AE60000957CC /* ECViewController.m */; };
+		080885D11488AE60000957CC /* ECViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 080885CF1488AE60000957CC /* ECViewController.xib */; };
+		080885D81488AE77000957CC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080885D71488AE77000957CC /* QuartzCore.framework */; };
+		080885DB1488AEB3000957CC /* ECGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885DA1488AEB2000957CC /* ECGameViewController.m */; };
+		080885DE1488AFCE000957CC /* ECGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885DD1488AFCD000957CC /* ECGameView.m */; };
+		080885E01488BA54000957CC /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 080885DF1488BA54000957CC /* spark.png */; };
+		080885E41488BEDC000957CC /* ECChristmasOrnamentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 080885E31488BEDC000957CC /* ECChristmasOrnamentView.m */; };
+		1446BB6014891A4E00D1DD77 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1446BB5E14891A4E00D1DD77 /* Icon.png */; };
+		1446BB6114891A4E00D1DD77 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1446BB5F14891A4E00D1DD77 /* Icon@2x.png */; };
+		1446BB6414891AA100D1DD77 /* Default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1446BB6314891AA100D1DD77 /* Default@2x.jpg */; };
+		1446BB6614891ADC00D1DD77 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1446BB6514891ADC00D1DD77 /* Default.png */; };
+		144747C11488F03C005A875E /* bells@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747BB1488F03C005A875E /* bells@2x.png */; };
+		144747C21488F03C005A875E /* candygold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747BC1488F03C005A875E /* candygold@2x.png */; };
+		144747C31488F03C005A875E /* presentblue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747BD1488F03C005A875E /* presentblue@2x.png */; };
+		144747C41488F03C005A875E /* snowman2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747BE1488F03C005A875E /* snowman2@2x.png */; };
+		144747C51488F03C005A875E /* wreath1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747BF1488F03C005A875E /* wreath1@2x.png */; };
+		144747C61488F03C005A875E /* xtree1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747C01488F03C005A875E /* xtree1@2x.png */; };
+		144747D31488FD4C005A875E /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747D21488FD4C005A875E /* fire.png */; };
+		144747D514890561005A875E /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 144747D414890561005A875E /* background@2x.png */; };
+		144747D814890EBA005A875E /* ECGameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144747D714890EBA005A875E /* ECGameOverViewController.m */; };
+		144747DB14891030005A875E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 144747DD14891030005A875E /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080885B61488AE60000957CC /* ExplodeChristmas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplodeChristmas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		080885BA1488AE60000957CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		080885BC1488AE60000957CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		080885BE1488AE60000957CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		080885C21488AE60000957CC /* ExplodeChristmas-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExplodeChristmas-Info.plist"; sourceTree = "<group>"; };
+		080885C41488AE60000957CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		080885C61488AE60000957CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		080885C81488AE60000957CC /* ExplodeChristmas-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExplodeChristmas-Prefix.pch"; sourceTree = "<group>"; };
+		080885C91488AE60000957CC /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
+		080885CA1488AE60000957CC /* ECAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
+		080885CC1488AE60000957CC /* ECViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECViewController.h; sourceTree = "<group>"; };
+		080885CD1488AE60000957CC /* ECViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECViewController.m; sourceTree = "<group>"; };
+		080885D01488AE60000957CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ECViewController.xib; sourceTree = "<group>"; };
+		080885D71488AE77000957CC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		080885D91488AEB2000957CC /* ECGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGameViewController.h; sourceTree = "<group>"; };
+		080885DA1488AEB2000957CC /* ECGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGameViewController.m; sourceTree = "<group>"; };
+		080885DC1488AFCD000957CC /* ECGameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGameView.h; sourceTree = "<group>"; };
+		080885DD1488AFCD000957CC /* ECGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGameView.m; sourceTree = "<group>"; };
+		080885DF1488BA54000957CC /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		080885E21488BEDC000957CC /* ECChristmasOrnamentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECChristmasOrnamentView.h; sourceTree = "<group>"; };
+		080885E31488BEDC000957CC /* ECChristmasOrnamentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECChristmasOrnamentView.m; sourceTree = "<group>"; };
+		1446BB5E14891A4E00D1DD77 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		1446BB5F14891A4E00D1DD77 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1446BB6314891AA100D1DD77 /* Default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Default@2x.jpg"; sourceTree = "<group>"; };
+		1446BB6514891ADC00D1DD77 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		144747BB1488F03C005A875E /* bells@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bells@2x.png"; sourceTree = "<group>"; };
+		144747BC1488F03C005A875E /* candygold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "candygold@2x.png"; sourceTree = "<group>"; };
+		144747BD1488F03C005A875E /* presentblue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "presentblue@2x.png"; sourceTree = "<group>"; };
+		144747BE1488F03C005A875E /* snowman2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snowman2@2x.png"; sourceTree = "<group>"; };
+		144747BF1488F03C005A875E /* wreath1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wreath1@2x.png"; sourceTree = "<group>"; };
+		144747C01488F03C005A875E /* xtree1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xtree1@2x.png"; sourceTree = "<group>"; };
+		144747D21488FD4C005A875E /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		144747D414890561005A875E /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		144747D614890EB9005A875E /* ECGameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGameOverViewController.h; sourceTree = "<group>"; };
+		144747D714890EBA005A875E /* ECGameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGameOverViewController.m; sourceTree = "<group>"; };
+		144747DC14891030005A875E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		144747DE14891038005A875E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		080885B31488AE60000957CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080885BB1488AE60000957CC /* UIKit.framework in Frameworks */,
+				080885BD1488AE60000957CC /* Foundation.framework in Frameworks */,
+				080885BF1488AE60000957CC /* CoreGraphics.framework in Frameworks */,
+				080885D81488AE77000957CC /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080885AB1488AE60000957CC = {
+			isa = PBXGroup;
+			children = (
+				080885C01488AE60000957CC /* ExplodeChristmas */,
+				080885B91488AE60000957CC /* Frameworks */,
+				080885B71488AE60000957CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		080885B71488AE60000957CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				080885B61488AE60000957CC /* ExplodeChristmas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		080885B91488AE60000957CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				080885BA1488AE60000957CC /* UIKit.framework */,
+				080885BC1488AE60000957CC /* Foundation.framework */,
+				080885BE1488AE60000957CC /* CoreGraphics.framework */,
+				080885D71488AE77000957CC /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		080885C01488AE60000957CC /* ExplodeChristmas */ = {
+			isa = PBXGroup;
+			children = (
+				080885C91488AE60000957CC /* ECAppDelegate.h */,
+				080885CA1488AE60000957CC /* ECAppDelegate.m */,
+				080885CC1488AE60000957CC /* ECViewController.h */,
+				080885CD1488AE60000957CC /* ECViewController.m */,
+				080885D91488AEB2000957CC /* ECGameViewController.h */,
+				080885DA1488AEB2000957CC /* ECGameViewController.m */,
+				144747D614890EB9005A875E /* ECGameOverViewController.h */,
+				144747D714890EBA005A875E /* ECGameOverViewController.m */,
+				080885DC1488AFCD000957CC /* ECGameView.h */,
+				080885DD1488AFCD000957CC /* ECGameView.m */,
+				080885E21488BEDC000957CC /* ECChristmasOrnamentView.h */,
+				080885E31488BEDC000957CC /* ECChristmasOrnamentView.m */,
+				080885CF1488AE60000957CC /* ECViewController.xib */,
+				080885E11488BA59000957CC /* Images */,
+				080885C11488AE60000957CC /* Supporting Files */,
+			);
+			path = ExplodeChristmas;
+			sourceTree = "<group>";
+		};
+		080885C11488AE60000957CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				080885C21488AE60000957CC /* ExplodeChristmas-Info.plist */,
+				144747DD14891030005A875E /* Localizable.strings */,
+				080885C31488AE60000957CC /* InfoPlist.strings */,
+				080885C61488AE60000957CC /* main.m */,
+				080885C81488AE60000957CC /* ExplodeChristmas-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		080885E11488BA59000957CC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1446BB6514891ADC00D1DD77 /* Default.png */,
+				1446BB6314891AA100D1DD77 /* Default@2x.jpg */,
+				1446BB5E14891A4E00D1DD77 /* Icon.png */,
+				1446BB5F14891A4E00D1DD77 /* Icon@2x.png */,
+				144747D414890561005A875E /* background@2x.png */,
+				144747C81488F046005A875E /* Enemies */,
+				144747C91488F051005A875E /* Particles */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		144747C81488F046005A875E /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+				144747BB1488F03C005A875E /* bells@2x.png */,
+				144747BC1488F03C005A875E /* candygold@2x.png */,
+				144747BD1488F03C005A875E /* presentblue@2x.png */,
+				144747BE1488F03C005A875E /* snowman2@2x.png */,
+				144747BF1488F03C005A875E /* wreath1@2x.png */,
+				144747C01488F03C005A875E /* xtree1@2x.png */,
+			);
+			name = Enemies;
+			sourceTree = "<group>";
+		};
+		144747C91488F051005A875E /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				080885DF1488BA54000957CC /* spark.png */,
+				144747D21488FD4C005A875E /* fire.png */,
+			);
+			name = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		080885B51488AE60000957CC /* ExplodeChristmas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080885D41488AE60000957CC /* Build configuration list for PBXNativeTarget "ExplodeChristmas" */;
+			buildPhases = (
+				080885B21488AE60000957CC /* Sources */,
+				080885B31488AE60000957CC /* Frameworks */,
+				080885B41488AE60000957CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExplodeChristmas;
+			productName = ExplodeChristmas;
+			productReference = 080885B61488AE60000957CC /* ExplodeChristmas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		080885AD1488AE60000957CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 080885B01488AE60000957CC /* Build configuration list for PBXProject "ExplodeChristmas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = 080885AB1488AE60000957CC;
+			productRefGroup = 080885B71488AE60000957CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				080885B51488AE60000957CC /* ExplodeChristmas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		080885B41488AE60000957CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080885C51488AE60000957CC /* InfoPlist.strings in Resources */,
+				080885D11488AE60000957CC /* ECViewController.xib in Resources */,
+				080885E01488BA54000957CC /* spark.png in Resources */,
+				144747C11488F03C005A875E /* bells@2x.png in Resources */,
+				144747C21488F03C005A875E /* candygold@2x.png in Resources */,
+				144747C31488F03C005A875E /* presentblue@2x.png in Resources */,
+				144747C41488F03C005A875E /* snowman2@2x.png in Resources */,
+				144747C51488F03C005A875E /* wreath1@2x.png in Resources */,
+				144747C61488F03C005A875E /* xtree1@2x.png in Resources */,
+				144747D31488FD4C005A875E /* fire.png in Resources */,
+				144747D514890561005A875E /* background@2x.png in Resources */,
+				144747DB14891030005A875E /* Localizable.strings in Resources */,
+				1446BB6014891A4E00D1DD77 /* Icon.png in Resources */,
+				1446BB6114891A4E00D1DD77 /* Icon@2x.png in Resources */,
+				1446BB6414891AA100D1DD77 /* Default@2x.jpg in Resources */,
+				1446BB6614891ADC00D1DD77 /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		080885B21488AE60000957CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				080885C71488AE60000957CC /* main.m in Sources */,
+				080885CB1488AE60000957CC /* ECAppDelegate.m in Sources */,
+				080885CE1488AE60000957CC /* ECViewController.m in Sources */,
+				080885DB1488AEB3000957CC /* ECGameViewController.m in Sources */,
+				080885DE1488AFCE000957CC /* ECGameView.m in Sources */,
+				080885E41488BEDC000957CC /* ECChristmasOrnamentView.m in Sources */,
+				144747D814890EBA005A875E /* ECGameOverViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		080885C31488AE60000957CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				080885C41488AE60000957CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		080885CF1488AE60000957CC /* ECViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				080885D01488AE60000957CC /* en */,
+			);
+			name = ECViewController.xib;
+			sourceTree = "<group>";
+		};
+		144747DD14891030005A875E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				144747DC14891030005A875E /* en */,
+				144747DE14891038005A875E /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		080885D21488AE60000957CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		080885D31488AE60000957CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		080885D51488AE60000957CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExplodeChristmas/ExplodeChristmas-Prefix.pch";
+				INFOPLIST_FILE = "ExplodeChristmas/ExplodeChristmas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		080885D61488AE60000957CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExplodeChristmas/ExplodeChristmas-Prefix.pch";
+				INFOPLIST_FILE = "ExplodeChristmas/ExplodeChristmas-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		080885B01488AE60000957CC /* Build configuration list for PBXProject "ExplodeChristmas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080885D21488AE60000957CC /* Debug */,
+				080885D31488AE60000957CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		080885D41488AE60000957CC /* Build configuration list for PBXNativeTarget "ExplodeChristmas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				080885D51488AE60000957CC /* Debug */,
+				080885D61488AE60000957CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 080885AD1488AE60000957CC /* Project object */;
+}

@@ -57,9 +57,8 @@
     self.view = contentView;
     [contentView release];
     
-    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
-    [contentView addSubview:background];
-    [background release];
+    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
+    contentView.layer.contents = (id)[backgroundImage CGImage];
     
     scoreLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 300.0f, 30.0f)];
     scoreLabel.backgroundColor = [UIColor clearColor];

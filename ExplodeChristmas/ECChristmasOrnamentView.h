@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface ECChristmasOrnamentView : UIView {
-    UIImageView *imageView;
-}
+@interface ECChristmasOrnamentView : UIView
 
 @end

@@ -9,7 +9,6 @@
 #import "ECChristmasOrnamentView.h"
 
 static NSArray *imageNames;
-static CGFloat scale;
 
 @implementation ECChristmasOrnamentView
 
@@ -21,21 +20,18 @@ static CGFloat scale;
                   @"snowman2", 
                   @"wreath1", 
                   @"xtree1", nil];
-    scale = [[UIScreen mainScreen] scale];
 }
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         u_int32_t index = arc4random() % [imageNames count];
+        UIImage *image = [UIImage imageNamed:[imageNames objectAtIndex:index]];
         
-        imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[imageNames objectAtIndex:index]]];
-        imageView.contentScaleFactor = scale;
-        [self addSubview:imageView];
-        [imageView release];
+        self.layer.contents = (id)[image CGImage];
         
         u_int32_t offset = arc4random() % 32;
-        CGSize size = imageView.frame.size;
+        CGSize size = image.size;
         CGPoint origin = CGPointMake(MIN(10.0f * offset, 320.0f - size.width), size.height * -1);
         frame.size = size;
         frame.origin = origin;

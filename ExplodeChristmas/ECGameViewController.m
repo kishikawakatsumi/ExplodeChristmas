@@ -23,14 +23,14 @@
         failSoundEffects = [[NSMutableArray alloc] init];
         NSBundle *mainBundle = [NSBundle mainBundle];
         for (int i = 0; i < 10; i++) {
-            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[mainBundle pathForResource:@"explosion" ofType:@"mp3"]] error:nil];
+            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[mainBundle pathForResource:@"explosion" ofType:@"mp3"]] error:nil];
             [player prepareToPlay];
             
             [explosionSoundEffects addObject:player];
             [player release];
         }
         for (int i = 0; i < 10; i++) {
-            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL URLWithString:[mainBundle pathForResource:@"fail" ofType:@"mp3"]] error:nil];
+            AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[mainBundle pathForResource:@"fail" ofType:@"mp3"]] error:nil];
             [player prepareToPlay];
             
             [failSoundEffects addObject:player];
